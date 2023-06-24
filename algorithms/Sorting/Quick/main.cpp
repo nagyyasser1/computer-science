@@ -1,77 +1,61 @@
-// C++ Implementation of the Quick Sort Algorithm.
 #include <iostream>
 using namespace std;
 
-int partition(int arr[], int start, int end)
+void swap(int *a, int *b);
+void printArr(int arr[], int length);
+int Partition(int arr[], int start, int end);
+void quickSort(int arr[], int start, int end);
+int main()
 {
+    int nums[] = {2, 8, 4, 7, 1, 3, 9, 6, 5};
+    int len = sizeof(nums) / sizeof(nums[0]);
 
-    int pivot = arr[start];
+    printArr(nums, len);
+    cout << endl;
+    quickSort(nums, 0, len - 1);
+    printArr(nums, len);
+    return 0;
+}
 
-    int count = 0;
-    for (int i = start + 1; i <= end; i++)
+int Partition(int arr[], int start, int end)
+{
+    int pivot = end;
+    int index = start;
+    for (int i = start; i < end; i++)
     {
-        if (arr[i] <= pivot)
-            count++;
-    }
-
-    // Giving pivot element its correct position
-    int pivotIndex = start + count;
-    swap(arr[pivotIndex], arr[start]);
-
-    // Sorting left and right parts of the pivot element
-    int i = start, j = end;
-
-    while (i < pivotIndex && j > pivotIndex)
-    {
-
-        while (arr[i] <= pivot)
+        if (arr[i] < arr[pivot])
         {
-            i++;
-        }
-
-        while (arr[j] > pivot)
-        {
-            j--;
-        }
-
-        if (i < pivotIndex && j > pivotIndex)
-        {
-            swap(arr[i++], arr[j--]);
+            swap(arr[i], arr[index]);
+            index++;
         }
     }
-
-    return pivotIndex;
+    swap(arr[index], arr[pivot]);
+    return index;
 }
 
 void quickSort(int arr[], int start, int end)
 {
-
-    // base case
-    if (start >= end)
-        return;
-
-    // partitioning the array
-    int p = partition(arr, start, end);
-
-    // Sorting the left part
-    quickSort(arr, start, p - 1);
-
-    // Sorting the right part
-    quickSort(arr, p + 1, end);
+    if (start < end)
+    {
+        int piv = Partition(arr, start, end);
+        quickSort(arr, start, piv - 1);
+        quickSort(arr, piv + 1, end);
+    }
 }
 
-int main()
+void swap(int *a, int *b)
 {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+};
 
-    int arr[] = {9, 3, 4, 2, 1, 8};
-    int n = 6;
-
-    quickSort(arr, 0, n - 1);
-
-    for (int i = 0; i < n; i++)
+void printArr(int arr[], int length)
+{
+    std::cout << "Array is : [";
+    for (int i = 0; i < length; i++)
     {
-        cout << arr[i] << " ";
+        std::cout << arr[i] << '\t';
     }
-
-    return 0;
+    std::cout << ']';
 }

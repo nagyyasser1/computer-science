@@ -34,6 +34,5 @@ int binary_search(int arr[], int n, int length)
             start = middle + 1;
         }
     }
-
     return -1;
 }
