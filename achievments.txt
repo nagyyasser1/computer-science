@@ -1,2 +1,10 @@
 1/10/2023 : memory management in c++ : article link = "https://www.educative.io/blog/cpp-memory-management"
 2/10/2023 : solve prime number issue (2) :
+3/10/2023 : solve is perfect number : magic intro to data structure : rev pointers : call value&ref :
+4/10/2023 : complete is perfect problem and reverse digits problem : magic intro to OOP
+5/10/2023 : solve digit problem : 
+
+
+
+
+
