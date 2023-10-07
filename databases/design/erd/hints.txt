@@ -1,0 +1,7 @@
+//(1)
+Entity : may be from our org or outside it , my have more than one key att..;
+Week Entity : entity that have't key att.. from it self;
+Stored attribute , Drived Attribute ;
+Complex attribute = multivalued + composite  . ex: "phone";
+//(2)
+Type of Relationship:() unary,binary,ternary ();

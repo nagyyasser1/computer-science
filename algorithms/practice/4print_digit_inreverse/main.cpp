@@ -18,10 +18,11 @@ void PrintDigits(int Number)
     {
         Remainder = Number % 10;
         Number = Number / 10;
-        cout << "number:" << Number << endl;
+        cout << Number * 10 << " / 10 =  " << Number << endl;
         cout << Remainder << endl;
     }
 }
+
 int main()
 {
 
