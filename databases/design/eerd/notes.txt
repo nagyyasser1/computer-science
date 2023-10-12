@@ -1,0 +1,2 @@
+3/ local attributes vs main attributes
+3/subclass and superclass => inhertance
