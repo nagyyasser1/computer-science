@@ -1,0 +1,21 @@
+___Mapping ("ER") model to Relational Schema___
+
+_p1__(Mapping Entity).
+
+1.spreed composite attribute into multiple attributes.
+2.take multi value attribute into new relation with the key attribute of main entity.
+3.if the entity have more than one key attribute we will take only one to be key attribute ,it's data type preffered to be number. 
+
+_p2__(Mapping Relationship).
+
+1.(1:1) => take PK of entity that have parital participation into the entity that have total participation.
+2.(1:M) => take PK one into many .
+3.(M:M) => create new relation and take PK from two entities plus any attribute on relationship.
+
+___Mapping ("EER") model to Relational Schema___
+
+_p3__()
+
+
+
+

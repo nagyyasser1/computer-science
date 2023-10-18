@@ -1,5 +1,8 @@
 //50 / 49 / 48 / 47 / 46 / 45 / 44 / 43 / 42 / 41 / 40.
-//39 / 38 
+//39 / 38 / 37 / 36 / 35 /34
+
+x = 34 from 50;
+
 
 1/10/2023 : memory management in c++ : article link = "https://www.educative.io/blog/cpp-memory-management"
 2/10/2023 : solve prime number issue (2) :
@@ -12,9 +15,11 @@
 9/10/2023 : no achievment work hard.
 10/10/2023 : DB : "'complete EER,','relational model'"
 11/10/2023 : no achievment  sick.
-12/10/2023 : DS => "Linked List p2" , DB => " complete relational model".
-
-
+12/10/2023 : DS => "Linked List p2" , DB => " complete relational model" , OOP => "passing object as a func param".
+13/10/2023 : no achievment "work hard","buy clothes".
+14/10/2023 : DS => "Linked List p3".
+15/10/2023 : DS => "بكمل ال لينكدليست ههعمل ايه روحت الكليه وبعديها روحت السويس اغير البنطلون ".
+16/10/2023 : ALG => "complete 16 problem",OOP: "static concept,Operator Overloading", DB => "mapping er to relational schema"
 
 
 
