@@ -1,0 +1,6 @@
+*#*Functional Dependency : هيا علاقه او ارتباط بين اتربيوت واتربيوت اخر في نفس 
+   x->y means x determins y.
+
+*#*Normalization is to take this attributes into brand new relation. 
+
+

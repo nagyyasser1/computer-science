@@ -1,7 +1,5 @@
-//50 / 49 / 48 / 47 / 46 / 45 / 44 / 43 / 42 / 41 / 40.
-//39 / 38 / 37 / 36 / 35 /34
 
-x = 34 from 50;
+x = 31 from 50;
 
 
 1/10/2023 : memory management in c++ : article link = "https://www.educative.io/blog/cpp-memory-management"
@@ -20,7 +18,9 @@ x = 34 from 50;
 14/10/2023 : DS => "Linked List p3".
 15/10/2023 : DS => "بكمل ال لينكدليست ههعمل ايه روحت الكليه وبعديها روحت السويس اغير البنطلون ".
 16/10/2023 : ALG => "complete 16 problem",OOP: "static concept,Operator Overloading", DB => "mapping er to relational schema"
-
+17/10/2023 : "Charity"
+18/10/2023 : "Charity"
+19/10/2023 : DB =>"Finish DB theroy" , OOP ="Inhertance part1. "
 
 
 

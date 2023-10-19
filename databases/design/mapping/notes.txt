@@ -14,7 +14,14 @@ _p2__(Mapping Relationship).
 
 ___Mapping ("EER") model to Relational Schema___
 
-_p3__()
+_option-1.
+    multiple relations-Superclasses an Subclasses.
+_option-2.
+    multiple relations-Subclasses relations Only.
+_option-3.
+    single relation with one type attribute.
+_option-4.
+    single relation with multiple type attributes.
 
 
 
