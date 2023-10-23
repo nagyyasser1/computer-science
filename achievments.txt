@@ -1,7 +1,6 @@
-
-x = 31 from 50;
-
-
+=============================
+===__x = (21 - 50) = 29__====
+=============================
 1/10/2023 : memory management in c++ : article link = "https://www.educative.io/blog/cpp-memory-management"
 2/10/2023 : solve prime number issue (2) :
 3/10/2023 : solve is perfect number : magic intro to data structure : rev pointers : call value&ref :
@@ -20,7 +19,10 @@ x = 31 from 50;
 16/10/2023 : ALG => "complete 16 problem",OOP: "static concept,Operator Overloading", DB => "mapping er to relational schema"
 17/10/2023 : "Charity"
 18/10/2023 : "Charity"
-19/10/2023 : DB =>"Finish DB theroy" , OOP ="Inhertance part1. "
-
+19/10/2023 : DB =>"Finish DB Theroy" , OOP ="Inhertance part1. "
+20/10/2023 : OOP =>"Finish OOP"  , DS =>"Stack,Queue"
+21/10/2023 : DS =>"Tree p1,"
+22/10/2023 : DS =>"Tree p2,"
+23/10/2023 : DS =>"Tree p3 , Finished DS"
 
 

@@ -1,80 +1,202 @@
 #include <iostream>
 using namespace std;
 
-class BTS{
-    private:
-    struct node
+class Node
+{
+public:
+    Node *left, *right;
+    int data;
+
+    Node(int value)
     {
-        int data;
-        node*right;
-        node*left;
+        data = value;
+        left = right = NULL;
     };
-    node*root=nullptr;
-    int getHeighthelper(node*temp){
-        if(temp==nullptr){
-            return -1;
+};
+
+class BST
+{
+public:
+    Node *root;
+    BST()
+    {
+        root = NULL;
+    };
+
+    Node *insert(Node *current, int item)
+    {
+
+        if (current == NULL)
+        {
+            Node *new_node = new Node(item);
+            current = new_node;
         }
-        int LeftSubTree=getHeighthelper(temp->left);
-        int ReightSubTree=getHeighthelper(temp->right);
-        return 1+max(LeftSubTree,ReightSubTree);
+        else if (item < current->data)
+        {
+            current->left = insert(current->left, item);
+        }
+        else
+        {
+            current->right = insert(current->right, item);
+        }
+
+        return current;
     }
-    public:
-    void add(int value){
-    node*newNode=new node;
-    newNode->data=value;
-    newNode->left=nullptr;
-    newNode->right=nullptr;
-    if(root==nullptr){
-        root=newNode;
-        return;
-    }
-    node*temp=root;
-    node*parent=nullptr;
-    while (temp!=nullptr)
+
+    void insert(int item)
     {
-        parent=temp;
-        if(value<=temp->data){
-            temp=temp->left;
-        }else{
-            temp=temp->right;
+        root = insert(root, item);
+    }
+
+    void pre_order(Node *r)
+    {
+        if (r == NULL)
+        {
+            return;
+        }
+        cout << r->data << "\t";
+        pre_order(r->left);
+        pre_order(r->right);
+    }
+
+    void in_order(Node *r)
+    {
+        if (r == NULL)
+        {
+            return;
+        }
+        in_order(r->left);
+        cout << r->data << "\t";
+        in_order(r->right);
+    }
+
+    void post_order(Node *r)
+    {
+        if (r == NULL)
+        {
+            return;
+        }
+        post_order(r->left);
+        post_order(r->right);
+        cout << r->data << "\t";
+    }
+
+    Node *search(int key, Node *current)
+    {
+        if (current == nullptr || key == current->data)
+        {
+            return current;
+        }
+        else if (key < current->data)
+        {
+            return search(key, current->left);
+        }
+        else
+        {
+            return search(key, current->right);
         }
     }
-    if(value<=parent->data){
-        parent->left=newNode;
-    }else{
-        parent->right=newNode;
-    }
-}
-    int getMax(){
-    node*temp=root;
-    while (temp->right!=nullptr) 
+
+    bool search(int key)
     {
-        temp=temp->right;
+        if (root == NULL)
+        {
+            return false;
+        }
+        Node *result = search(key, root);
+        return result != NULL;
     }
-    return temp->data;
-}
-    int getMin(){
-    node*temp=root;
-    while (temp->left!=nullptr)
+
+    Node *min(Node *current)
     {
-        temp=temp->left;
+
+        if (current == NULL)
+        {
+            return NULL;
+        }
+
+        if (current->left == NULL)
+        {
+            return current;
+        }
+        else
+        {
+            return min(current->left);
+        }
     }
-    return temp->data;
-}
-    int getHeight(){
-        if(root==nullptr){
-            return -1;
-        }else{
-            return getHeighthelper(root);
+
+    Node *max(Node *current)
+    {
+
+        if (current == NULL)
+        {
+            return NULL;
+        }
+
+        if (current->right == NULL)
+        {
+            return current;
+        }
+        else
+        {
+            return max(current->right);
+        }
+    }
+
+    Node *delete_node(Node *current, int key)
+    {
+        if (current == NULL)
+        {
+            return NULL;
         }
     }
 };
 
-int main(){
-    BTS s;
-    
-    cout<<s.getHeight();
+int main()
+{
+    BST btree;
+    btree.insert(45);
+    btree.insert(15);
+    btree.insert(79);
+    btree.insert(45);
+    btree.insert(90);
+    btree.insert(10);
+    btree.insert(55);
+    btree.insert(12);
+    btree.insert(20);
+    btree.insert(50);
+
+    cout << "Display tree content" << endl;
+    btree.pre_order(btree.root);
+    cout << endl;
+
+    if (btree.search(580))
+    {
+        cout << "Yes, found." << endl;
+    }
+    else
+    {
+        cout << "No, not found." << endl;
+    }
+
+    Node *min = btree.min(btree.root);
+    if (min == NULL)
+    {
+        cout << "no min items\n";
+    }
+    else
+    {
+        cout << "the min item equal : " << min->data << endl;
+    }
+    Node *max = btree.max(btree.root);
+    if (max == NULL)
+    {
+        cout << "no max items\n";
+    }
+    else
+    {
+        cout << "the max item equal : " << max->data << endl;
+    }
+
     return 0;
 }
-
-

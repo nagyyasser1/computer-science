@@ -22,7 +22,7 @@ public:
     ~stack();
 };
 
-stack::stack(/* args */) : top(-1) {}
+stack::stack() : top(-1) {}
 
 void stack::push(int Element)
 {

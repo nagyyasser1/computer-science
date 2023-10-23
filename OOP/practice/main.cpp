@@ -7,19 +7,20 @@ private:
     float length, height;
 
 public:
-    Rectangle();               // Constructor declaration
-    void setLength(float len); // Method declaration to set the length
-    float getLength();         // Method declaration to get the length
+    Rectangle();
+
+    void setLength(float len);
+    float getLength();
     ~Rectangle();
 };
 
-Rectangle::Rectangle() // Constructor definition
+Rectangle::Rectangle()
 {
-    length = 0.0; // Initialize length to 0
-    height = 0.0; // Initialize height to 0
+    length = 0.0;
+    height = 0.0;
 }
 
-void Rectangle::setLength(float len) // Method definition to set the length
+void Rectangle::setLength(float len)
 {
     if (len >= 0.0)
     {

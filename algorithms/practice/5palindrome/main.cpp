@@ -21,8 +21,15 @@ bool isPalindrome(int number)
 {
     return number == reverseNumber(number);
 }
+
+bool isPalindromeStr(string str)
+{
+    if (str.length() <= 1)
+    {
+        return true;
+    }
+}
 int main()
 {
-
-       return 0;
+    return 0;
 }
