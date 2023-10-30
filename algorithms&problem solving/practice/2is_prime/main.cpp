@@ -28,6 +28,25 @@ bool isNprime(int x)
     return true;
 }
 
+bool isPrime(int x)
+{
+    if (x <= 1)
+    {
+        cout << x << " is not prime.\n";
+        return false;
+    }
+    for (int counter = 2; counter <= x / 2; ++counter)
+    {
+        if (x % counter == 0)
+        {
+            cout << x << " is not prime.\n";
+            return false;
+        }
+    }
+    cout << x << " is prime.\n";
+    return true;
+}
+
 int main()
 {
     int number;

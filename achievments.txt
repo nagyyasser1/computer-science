@@ -17,12 +17,46 @@
 14/10/2023 : DS => "Linked List p3".
 15/10/2023 : DS => "بكمل ال لينكدليست ههعمل ايه روحت الكليه وبعديها روحت السويس اغير البنطلون ".
 16/10/2023 : ALG => "complete 16 problem",OOP: "static concept,Operator Overloading", DB => "mapping er to relational schema"
-17/10/2023 : "Charity"
-18/10/2023 : "Charity"
-19/10/2023 : DB =>"Finish DB Theroy" , OOP ="Inhertance part1. "
-20/10/2023 : OOP =>"Finish OOP"  , DS =>"Stack,Queue"
-21/10/2023 : DS =>"Tree p1,"
-22/10/2023 : DS =>"Tree p2,"
-23/10/2023 : DS =>"Tree p3 , Finished DS"
+17/10/2023 : "Charity".
+18/10/2023 : "Charity".
+19/10/2023 : DB =>"Finish DB Theroy" , OOP ="Inhertance part1".
+20/10/2023 : OOP =>"Finish OOP"  , DS =>"Stack,Queue".
+21/10/2023 : DS => "Tree p1".
+22/10/2023 : DS => "Tree p2".
+23/10/2023 : DS => "Tree p3 , Finished DS".
+24/10/2023 : Colage => "روحت الكليه وشوفنا مشروع التخرج".
+25.
+26.
+27.
+28. 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=============================================================================
+_1_ Muiltiplication Table. 
+_2_ Is Prime?.
+_3_ Is Perfect?.
+_4_ ~~~~~
+_5_ Reverse Number "only print".
+_6_ ~~~~~
+_7_ Reverse Number.
+_8_ ~~ Digit Freqency.
+_9_ ~~ .
+_10_ ~~ .
+_11_ Is Palindrome?.
+_12_ Inverted number pattern.
+_13/14/15/16/17/18_ ~~~.
+_19_ Random number.
