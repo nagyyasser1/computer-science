@@ -13,7 +13,6 @@ int main()
 
 int binary_search(int arr[], int n, int length)
 {
-
     int start = 0;
     int end = length - 1;
     int middle;

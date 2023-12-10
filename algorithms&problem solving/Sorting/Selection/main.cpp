@@ -5,6 +5,7 @@ void swap(int *a, int *b);
 void printArr(int arr[], int length);
 void selection_sort(int arr[], int size);
 void bubble_sort(int arr[], int size);
+void insertion_sort(int arr[], int size);
 
 int main()
 {
@@ -12,7 +13,7 @@ int main()
     int len = sizeof(nums) / sizeof(*nums);
 
     printArr(nums, len);
-    selection_sort(nums, len);
+    insertion_sort(nums, len);
     printArr(nums, len);
     return 0;
 }

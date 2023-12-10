@@ -29,8 +29,9 @@
 26.
 27.
 28. 
-
-
+29.
+30/10/2023 : ALG => "solve problem 21" , Tec => "working with relational databases in nodejs"
+1/11/2023 :
 
 
 
@@ -60,3 +61,8 @@ _11_ Is Palindrome?.
 _12_ Inverted number pattern.
 _13/14/15/16/17/18_ ~~~.
 _19_ Random number.
+_20_~~.
+_21_ very important.
+_22/23/24/25/26/27/28 ~~~~;
+مش عارف كنت فين
+_09/11/2023_ databases and problem solving
